@@ -42,15 +42,15 @@ The docker image contains the default config file with the following settings:
 
 If you need to change these settings, you need to create a new configuration file `deweb_server_config.yaml` with new settings and then copy it inside the container:
 
-    docker cp /path/to/new/deweb_server_config.yaml massa_deweb:/home/massa/deweb_server_config.yaml
+    docker container cp /path/to/new/deweb_server_config.yaml massa_deweb:/home/massa/deweb_server_config.yaml
 
 Set the correct owner for the new config file:
 
-    docker exec -u 0 massa_deweb chown massa:massa /home/massa/deweb_server_config.yaml
+    docker container exec -u 0 massa_deweb chown massa:massa /home/massa/deweb_server_config.yaml
 
 Then restart the container:
 
-    docker restart massa_deweb
+    docker container restart massa_deweb
 
 
 
@@ -85,6 +85,7 @@ Then restart the container:
 
 
 ### Create a separated network
+
     docker network create --driver="bridge" --ipv6 "massa-network"
 
 
