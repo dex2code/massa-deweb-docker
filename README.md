@@ -33,7 +33,9 @@ The docker image contains the default config file with the following settings:
     api_port: 8080
 
 If you need to change these settings, you need to create a new configuration file and then copy it inside the container:
+
     docker cp /path/to/local/deweb_server_config.yaml massa_deweb:/home/massa/deweb_server_config.yaml
 
 Then restart the container:
+
     docker restart massa_deweb
