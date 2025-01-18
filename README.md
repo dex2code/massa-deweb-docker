@@ -28,6 +28,7 @@ Link to Docker repository: https://hub.docker.com/r/dex2build/massa-deweb
 # DEWEB Server configuration:
 
 The docker image contains the default config file with the following settings:
+
     domain: "localhost"
     network_node_url: "https://mainnet.massa.net/api/v2"
     api_port: 8080
