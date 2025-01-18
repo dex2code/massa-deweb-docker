@@ -60,9 +60,9 @@ Then restart the container:
 
 
 
-## Watch node logs
+## Watch DEWEB server logs
 
-    docker container logs -f massa_node
+    docker container logs -f massa_deweb
 
 
 
