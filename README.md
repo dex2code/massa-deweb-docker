@@ -27,6 +27,10 @@ If the local port `8080/tcp` is already busy by another application you can chan
 
     --publish="18080:8080"
 
+After successfully launching the service, you can check its functionality by going to one of the decentralized sites.
+Try to open `http://docs.localhost:8080/` in your browser.
+
+
 
 # DEWEB Server configuration:
 
